@@ -128,4 +128,21 @@ $(document).ready(function() {
     })
   });
 
+    // HEADER RECENT TWEET REFRESH
+
+  $('#brand').on('click', function(event){
+  event.preventDefault();
+    $.ajax({
+      url:'/tweets/recent',
+      type:'get'
+    })
+    .done(function(server_data){
+      $('#tweets-list').empty();
+      build_tweet_html(server_data);
+    })
+    .fail(function (){
+      console.log("Nope Try Again")
+    })
+  })
+
 })
