@@ -41,25 +41,40 @@ $(document).ready(function() {
  })
 
   // CREATE NEW TWEET Soon To Be
+  var getHashTags = function(tweet_data) {
+    console.log(tweet_data);
+    var regex = /#\w+/g
+    var matches = tweet_data.match(regex);
+    return matches;
+  }
 
   $( "#tweet-form" ).submit(function(event) {
     event.preventDefault();
+    var form_data = $(event.target).find('#new-tweet').val();
+
+    var hashTags = getHashTags(form_data);
+
+    var data = { "tweet": {"content": form_data},
+                  "hashtags": hashTags }
     $.ajax({
       url: '/tweets',
       type: 'post',
+      data: data
     })
     .done(function(server_data) {
-      console.log("got some data back");
+      // console.log("got some data back");
       for(var i = 0; i < server_data.hashtag_names.length; i++){
-        server_data.hashtag_names[i] = "#" + server_data.hashtag_names[i]
+        // console.log(server_data.hashtag_names);
+        server_data.hashtag_names[i] = "#" + server_data.hashtag_names[i];
       }
-      hashtag_names = server_data.hashtag_names.toString().replace(/,/g , " ");
-      $('#tweets-container ul').prepend('<li class="tweet" style="display: none"><img class="avatar" src="'+server_data.avatar_url+
+      // console.log(server_data.hashtag_names)
+      hashtag_names = server_data.hashtag_names.toString()//.replace(/,/g , " ");
+      // console.log(hashtag_names)
+      $('#tweets-list').prepend('<li class="tweet" style="display: none"><img class="avatar" src="'+server_data.avatar_url+
         '" alt=""><div class="tweet-content"><p><span class="username">'+server_data.handle+'</span><span class="timestamp">'+server_data.created_at+'</span></p><p>'+
-        server_data.content + hashtag_names +'</p></div></li>');
+        server_data.content +'</p></div></li>');
       var tweetsList = $('.tweet');
-      $(tweetsList[0]).slideDown(2000);
-
+      $(tweetsList[0]).slideDown(200);
     })
     .fail(function() {
      console.log("failed to get data");
