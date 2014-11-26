@@ -1788,3 +1788,1069 @@ Processing by TweetsController#search as */*
   [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 11
   [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 10[0m
 Completed 200 OK in 79.8ms (Views: 0.1ms | ActiveRecord: 18.8ms)
+
+
+Started GET "/specs?catch=false" for 127.0.0.1 at 2014-11-26 10:46:50 -0800
+Connecting to database specified by database.yml
+Processing by JasmineRails::SpecRunnerController#index as HTML
+  Parameters: {"catch"=>"false"}
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/jasmine-rails-0.6.0/app/views/jasmine_rails/spec_runner/index.html.erb within layouts/jasmine_rails/spec_runner (0.9ms)
+Compiled jasmine.css  (0ms)  (pid 49708)
+Compiled jasmine.js  (1ms)  (pid 49708)
+Compiled jasmine-html.js  (0ms)  (pid 49708)
+Compiled json2.js  (0ms)  (pid 49708)
+Compiled boot.js  (0ms)  (pid 49708)
+Compiled jquery.js  (35ms)  (pid 49708)
+Compiled jquery_ujs.js  (0ms)  (pid 49708)
+Compiled test.js  (0ms)  (pid 49708)
+Compiled application.js  (52ms)  (pid 49708)
+Compiled tweet.model.spec.js  (0ms)  (pid 49708)
+Compiled jasmine-specs.js  (65ms)  (pid 49708)
+Completed 200 OK in 141.0ms (Views: 140.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jasmine.js?body=1" for 127.0.0.1 at 2014-11-26 10:46:51 -0800
+Served asset /jasmine.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jasmine.css?body=1" for 127.0.0.1 at 2014-11-26 10:46:51 -0800
+Served asset /jasmine.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jasmine-html.js?body=1" for 127.0.0.1 at 2014-11-26 10:46:51 -0800
+Served asset /jasmine-html.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/tweet.model.spec.js?body=1" for 127.0.0.1 at 2014-11-26 10:46:51 -0800
+Served asset /tweet.model.spec.js - 200 OK (4ms)
+
+
+Started GET "/assets/json2.js?body=1" for 127.0.0.1 at 2014-11-26 10:46:51 -0800
+Served asset /json2.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/boot.js?body=1" for 127.0.0.1 at 2014-11-26 10:46:51 -0800
+Served asset /boot.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 10:46:51 -0800
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/test.js?body=1" for 127.0.0.1 at 2014-11-26 10:46:51 -0800
+Served asset /test.js - 200 OK (36ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 10:46:51 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 10:46:51 -0800
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jasmine-specs.js?body=1" for 127.0.0.1 at 2014-11-26 10:46:51 -0800
+Served asset /jasmine-specs.js - 304 Not Modified (9ms)
+
+
+Started GET "/tweets/recent" for 127.0.0.1 at 2014-11-26 10:46:51 -0800
+Processing by TweetsController#recent as */*
+  [1m[36mTweet Load (1.8ms)[0m  [1mSELECT "tweets".* FROM "tweets" ORDER BY created_at DESC LIMIT 50[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 503
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 502[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 501
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 500[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 499
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 498[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 497
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 496[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 495
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 494[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 493
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 492[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 491
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 490[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 489
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 488[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 487
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 486[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 485
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 484[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 483
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 482[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 481
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 480[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 479
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 478[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 477
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 476[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 475
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 474[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 473
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 472[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 471
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 470[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 469
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 468[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 467
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 466[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 465
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 464[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 463
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 462[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 461
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 460[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 459
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 458[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 457
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 456[0m
+  [1m[35mSQL (1.1ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 455
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 454[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "tweets".* FROM "tweets" ORDER BY created_at DESC LIMIT 50
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 503[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 502
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 501[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 500
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 499[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 498
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 497[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 496
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 495[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 494
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 493[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 492
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 491[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 490
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 489[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 488
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 487[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 486
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 485[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 484
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 483[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 482
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 481[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 480
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 479[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 478
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 477[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 476
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 475[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 474
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 473[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 472
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 471[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 470
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 469[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 468
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 467[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 466
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 465[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 464
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 463[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 462
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 461[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 460
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 459[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 458
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 457[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 456
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 455[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 454
+Completed 200 OK in 435.9ms (Views: 0.1ms | ActiveRecord: 62.9ms)
+
+
+Started GET "/hashtags/popular" for 127.0.0.1 at 2014-11-26 10:46:51 -0800
+Processing by HashtagsController#popular as */*
+  [1m[36mHashtag Load (1.5ms)[0m  [1mSELECT hashtags.name, count(hashtag_id) as "hashtag_count" FROM "hashtags" INNER JOIN "tweet_tags" ON "tweet_tags"."hashtag_id" = "hashtags"."id" GROUP BY hashtags.id ORDER BY hashtag_count desc LIMIT 10[0m
+Completed 200 OK in 6.3ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/specs?catch=false" for 127.0.0.1 at 2014-11-26 10:46:55 -0800
+Processing by JasmineRails::SpecRunnerController#index as HTML
+  Parameters: {"catch"=>"false"}
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/jasmine-rails-0.6.0/app/views/jasmine_rails/spec_runner/index.html.erb within layouts/jasmine_rails/spec_runner (0.0ms)
+Compiled tweet.model.spec.js  (0ms)  (pid 49708)
+Compiled jasmine-specs.js  (4ms)  (pid 49708)
+Completed 200 OK in 30.6ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jasmine.css?body=1" for 127.0.0.1 at 2014-11-26 10:46:55 -0800
+Served asset /jasmine.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jasmine.js?body=1" for 127.0.0.1 at 2014-11-26 10:46:55 -0800
+Served asset /jasmine.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jasmine-html.js?body=1" for 127.0.0.1 at 2014-11-26 10:46:55 -0800
+Served asset /jasmine-html.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/json2.js?body=1" for 127.0.0.1 at 2014-11-26 10:46:55 -0800
+Served asset /json2.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 10:46:55 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 10:46:55 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/boot.js?body=1" for 127.0.0.1 at 2014-11-26 10:46:55 -0800
+Served asset /boot.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.js?body=1" for 127.0.0.1 at 2014-11-26 10:46:55 -0800
+Served asset /test.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 10:46:55 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tweet.model.spec.js?body=1" for 127.0.0.1 at 2014-11-26 10:46:55 -0800
+Served asset /tweet.model.spec.js - 200 OK (4ms)
+
+
+Started GET "/assets/jasmine-specs.js?body=1" for 127.0.0.1 at 2014-11-26 10:46:55 -0800
+Served asset /jasmine-specs.js - 304 Not Modified (10ms)
+
+
+Started GET "/tweets/recent" for 127.0.0.1 at 2014-11-26 10:46:55 -0800
+Processing by TweetsController#recent as */*
+  [1m[35mTweet Load (3.6ms)[0m  SELECT "tweets".* FROM "tweets" ORDER BY created_at DESC LIMIT 50
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 503[0m
+  [1m[35mSQL (1.2ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 502
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 501[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 500
+  [1m[36mSQL (0.9ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 499[0m
+  [1m[35mSQL (1.2ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 498
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 497[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 496
+  [1m[36mSQL (1.1ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 495[0m
+  [1m[35mSQL (2.0ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 494
+  [1m[36mSQL (0.9ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 493[0m
+  [1m[35mSQL (2.8ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 492
+  [1m[36mSQL (1.1ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 491[0m
+  [1m[35mSQL (1.3ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 490
+  [1m[36mSQL (0.9ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 489[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 488
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 487[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 486
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 485[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 484
+  [1m[36mSQL (1.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 483[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 482
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 481[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 480
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 479[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 478
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 477[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 476
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 475[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 474
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 473[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 472
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 471[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 470
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 469[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 468
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 467[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 466
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 465[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 464
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 463[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 462
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 461[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 460
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 459[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 458
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 457[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 456
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 455[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 454
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "tweets".* FROM "tweets" ORDER BY created_at DESC LIMIT 50[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 503
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 502[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 501
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 500[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 499
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 498[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 497
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 496[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 495
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 494[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 493
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 492[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 491
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 490[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 489
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 488[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 487
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 486[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 485
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 484[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 483
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 482[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 481
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 480[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 479
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 478[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 477
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 476[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 475
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 474[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 473
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 472[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 471
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 470[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 469
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 468[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 467
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 466[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 465
+  [1m[36mSQL (0.9ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 464[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 463
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 462[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 461
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 460[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 459
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 458[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 457
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 456[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 455
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 454[0m
+Completed 200 OK in 261.4ms (Views: 0.1ms | ActiveRecord: 66.4ms)
+
+
+Started GET "/hashtags/popular" for 127.0.0.1 at 2014-11-26 10:46:55 -0800
+Processing by HashtagsController#popular as */*
+  [1m[35mHashtag Load (1.1ms)[0m  SELECT hashtags.name, count(hashtag_id) as "hashtag_count" FROM "hashtags" INNER JOIN "tweet_tags" ON "tweet_tags"."hashtag_id" = "hashtags"."id" GROUP BY hashtags.id ORDER BY hashtag_count desc LIMIT 10
+Completed 200 OK in 2.8ms (Views: 0.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-26 10:47:13 -0800
+Processing by StaticController#index as HTML
+  Rendered static/index.html within layouts/application (0.6ms)
+Completed 200 OK in 73.1ms (Views: 72.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2014-11-26 10:47:13 -0800
+Served asset /app.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 10:47:13 -0800
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 10:47:13 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.js?body=1" for 127.0.0.1 at 2014-11-26 10:47:13 -0800
+Served asset /test.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 10:47:13 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 10:47:13 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/tweets/recent" for 127.0.0.1 at 2014-11-26 10:47:13 -0800
+Processing by TweetsController#recent as */*
+  [1m[36mTweet Load (2.4ms)[0m  [1mSELECT "tweets".* FROM "tweets" ORDER BY created_at DESC LIMIT 50[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 503
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 502[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 501
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 500[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 499
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 498[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 497
+  [1m[36mSQL (2.3ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 496[0m
+  [1m[35mSQL (1.1ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 495
+  [1m[36mSQL (1.8ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 494[0m
+  [1m[35mSQL (1.3ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 493
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 492[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 491
+  [1m[36mSQL (1.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 490[0m
+  [1m[35mSQL (2.3ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 489
+  [1m[36mSQL (3.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 488[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 487
+  [1m[36mSQL (0.9ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 486[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 485
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 484[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 483
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 482[0m
+  [1m[35mSQL (0.9ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 481
+  [1m[36mSQL (1.2ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 480[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 479
+  [1m[36mSQL (0.9ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 478[0m
+  [1m[35mSQL (0.9ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 477
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 476[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 475
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 474[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 473
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 472[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 471
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 470[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 469
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 468[0m
+  [1m[35mSQL (1.1ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 467
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 466[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 465
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 464[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 463
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 462[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 461
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 460[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 459
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 458[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 457
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 456[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 455
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 454[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "tweets".* FROM "tweets" ORDER BY created_at DESC LIMIT 50
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 503[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 502
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 501[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 500
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 499[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 498
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 497[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 496
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 495[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 494
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 493[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 492
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 491[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 490
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 489[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 488
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 487[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 486
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 485[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 484
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 483[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 482
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 481[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 480
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 479[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 478
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 477[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 476
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 475[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 474
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 473[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 472
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 471[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 470
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 469[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 468
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 467[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 466
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 465[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 464
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 463[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 462
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 461[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 460
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 459[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 458
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 457[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 456
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 455[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 454
+Completed 200 OK in 311.3ms (Views: 0.1ms | ActiveRecord: 69.9ms)
+
+
+Started GET "/hashtags/popular" for 127.0.0.1 at 2014-11-26 10:47:14 -0800
+Processing by HashtagsController#popular as */*
+  [1m[36mHashtag Load (1.6ms)[0m  [1mSELECT hashtags.name, count(hashtag_id) as "hashtag_count" FROM "hashtags" INNER JOIN "tweet_tags" ON "tweet_tags"."hashtag_id" = "hashtags"."id" GROUP BY hashtags.id ORDER BY hashtag_count desc LIMIT 10[0m
+Completed 200 OK in 3.6ms (Views: 0.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/tweets/search/yolo" for 127.0.0.1 at 2014-11-26 10:47:19 -0800
+Processing by TweetsController#search as */*
+  Parameters: {"keyword"=>"yolo"}
+  [1m[35mHashtag Load (0.8ms)[0m  SELECT "hashtags".* FROM "hashtags" WHERE "hashtags"."name" = 'yolo' LIMIT 1
+  [1m[36mTweet Load (0.8ms)[0m  [1mSELECT "tweets".* FROM "tweets" INNER JOIN "tweet_tags" ON "tweets"."id" = "tweet_tags"."tweet_id" WHERE "tweet_tags"."hashtag_id" = 39 ORDER BY created_at DESC LIMIT 50[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 503
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 502[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 501
+Completed 200 OK in 49.3ms (Views: 0.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/tweets/search/occaecati" for 127.0.0.1 at 2014-11-26 10:47:23 -0800
+Processing by TweetsController#search as */*
+  Parameters: {"keyword"=>"occaecati"}
+  [1m[36mHashtag Load (0.3ms)[0m  [1mSELECT "hashtags".* FROM "hashtags" WHERE "hashtags"."name" = 'occaecati' LIMIT 1[0m
+  [1m[35mTweet Load (0.9ms)[0m  SELECT "tweets".* FROM "tweets" INNER JOIN "tweet_tags" ON "tweets"."id" = "tweet_tags"."tweet_id" WHERE "tweet_tags"."hashtag_id" = 33 ORDER BY created_at DESC LIMIT 50
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 491[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 480
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 460[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 459
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 452[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 448
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 447[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 443
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 420[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 407
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 393[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 384
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 381[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 369
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 367[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 359
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 351[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 329
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 327[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 294
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 288[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 268
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 245[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 223
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 210[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 200
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 196[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 180
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 174[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 162
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 159[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 145
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 133[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 132
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 88[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 88
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 87[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 82
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 82[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 58
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 43[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 37
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 29[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 28
+Completed 200 OK in 87.0ms (Views: 0.1ms | ActiveRecord: 21.2ms)
+
+
+Started GET "/tweets/search/occaecati" for 127.0.0.1 at 2014-11-26 10:47:23 -0800
+Processing by TweetsController#search as */*
+  Parameters: {"keyword"=>"occaecati"}
+  [1m[36mHashtag Load (0.3ms)[0m  [1mSELECT "hashtags".* FROM "hashtags" WHERE "hashtags"."name" = 'occaecati' LIMIT 1[0m
+  [1m[35mTweet Load (0.9ms)[0m  SELECT "tweets".* FROM "tweets" INNER JOIN "tweet_tags" ON "tweets"."id" = "tweet_tags"."tweet_id" WHERE "tweet_tags"."hashtag_id" = 33 ORDER BY created_at DESC LIMIT 50
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 491[0m
+  [1m[35mSQL (0.9ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 480
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 460[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 459
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 452[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 448
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 447[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 443
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 420[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 407
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 393[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 384
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 381[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 369
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 367[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 359
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 351[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 329
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 327[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 294
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 288[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 268
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 245[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 223
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 210[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 200
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 196[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 180
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 174[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 162
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 159[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 145
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 133[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 132
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 88[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 88
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 87[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 82
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 82[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 58
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 43[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 37
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 29[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 28
+Completed 200 OK in 89.8ms (Views: 0.1ms | ActiveRecord: 21.8ms)
+
+
+Started GET "/tweets/search/praesentium" for 127.0.0.1 at 2014-11-26 10:47:24 -0800
+Processing by TweetsController#search as */*
+  Parameters: {"keyword"=>"praesentium"}
+  [1m[36mHashtag Load (0.3ms)[0m  [1mSELECT "hashtags".* FROM "hashtags" WHERE "hashtags"."name" = 'praesentium' LIMIT 1[0m
+  [1m[35mTweet Load (0.9ms)[0m  SELECT "tweets".* FROM "tweets" INNER JOIN "tweet_tags" ON "tweets"."id" = "tweet_tags"."tweet_id" WHERE "tweet_tags"."hashtag_id" = 13 ORDER BY created_at DESC LIMIT 50
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 493[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 492
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 484[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 451
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 433[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 429
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 426[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 404
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 386[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 384
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 381[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 346
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 344[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 321
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 320[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 316
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 305[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 296
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 283[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 283
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 268[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 243
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 217[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 205
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 198[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 183
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 169[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 166
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 163[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 136
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 130[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 114
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 109[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 101
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 91[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 83
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 61[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 48
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 38[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 15
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 5[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 3
+Completed 200 OK in 83.8ms (Views: 0.1ms | ActiveRecord: 19.8ms)
+
+
+Started GET "/tweets/search/accusamus" for 127.0.0.1 at 2014-11-26 10:47:24 -0800
+Processing by TweetsController#search as */*
+  Parameters: {"keyword"=>"accusamus"}
+  [1m[36mHashtag Load (0.3ms)[0m  [1mSELECT "hashtags".* FROM "hashtags" WHERE "hashtags"."name" = 'accusamus' LIMIT 1[0m
+  [1m[35mTweet Load (0.9ms)[0m  SELECT "tweets".* FROM "tweets" INNER JOIN "tweet_tags" ON "tweets"."id" = "tweet_tags"."tweet_id" WHERE "tweet_tags"."hashtag_id" = 3 ORDER BY created_at DESC LIMIT 50
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 494[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 465
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 461[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 446
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 433[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 422
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 422[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 417
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 402[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 380
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 342[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 340
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 328[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 328
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 325[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 316
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 316[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 312
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 306[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 251
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 234[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 212
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 212[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 195
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 186[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 143
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 130[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 116
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 113[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 93
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 57[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 44
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 41[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 41
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 35[0m
+  [1m[35mSQL (0.9ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 24
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 14[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 14
+Completed 200 OK in 83.8ms (Views: 0.1ms | ActiveRecord: 20.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-26 10:48:28 -0800
+Processing by StaticController#index as HTML
+  Rendered static/index.html within layouts/application (0.0ms)
+Compiled test.js  (0ms)  (pid 49708)
+Compiled application.js  (2ms)  (pid 49708)
+Completed 200 OK in 28.4ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2014-11-26 10:48:28 -0800
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 10:48:28 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 10:48:28 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/test.js?body=1" for 127.0.0.1 at 2014-11-26 10:48:28 -0800
+Served asset /test.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 10:48:28 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 10:48:28 -0800
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/tweets/recent" for 127.0.0.1 at 2014-11-26 10:48:28 -0800
+Processing by TweetsController#recent as */*
+  [1m[36mTweet Load (2.5ms)[0m  [1mSELECT "tweets".* FROM "tweets" ORDER BY created_at DESC LIMIT 50[0m
+  [1m[35mSQL (2.0ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 503
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 502[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 501
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 500[0m
+  [1m[35mSQL (3.2ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 499
+  [1m[36mSQL (1.7ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 498[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 497
+  [1m[36mSQL (1.9ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 496[0m
+  [1m[35mSQL (0.9ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 495
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 494[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 493
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 492[0m
+  [1m[35mSQL (2.3ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 491
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 490[0m
+  [1m[35mSQL (0.9ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 489
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 488[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 487
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 486[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 485
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 484[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 483
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 482[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 481
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 480[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 479
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 478[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 477
+  [1m[36mSQL (1.3ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 476[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 475
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 474[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 473
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 472[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 471
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 470[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 469
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 468[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 467
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 466[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 465
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 464[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 463
+  [1m[36mSQL (1.3ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 462[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 461
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 460[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 459
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 458[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 457
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 456[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 455
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 454[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "tweets".* FROM "tweets" ORDER BY created_at DESC LIMIT 50
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 503[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 502
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 501[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 500
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 499[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 498
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 497[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 496
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 495[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 494
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 493[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 492
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 491[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 490
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 489[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 488
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 487[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 486
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 485[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 484
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 483[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 482
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 481[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 480
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 479[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 478
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 477[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 476
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 475[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 474
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 473[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 472
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 471[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 470
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 469[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 468
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 467[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 466
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 465[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 464
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 463[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 462
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 461[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 460
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 459[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 458
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 457[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 456
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 455[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 454
+Completed 200 OK in 321.2ms (Views: 0.2ms | ActiveRecord: 67.8ms)
+
+
+Started GET "/hashtags/popular" for 127.0.0.1 at 2014-11-26 10:48:28 -0800
+Processing by HashtagsController#popular as */*
+  [1m[36mHashtag Load (1.0ms)[0m  [1mSELECT hashtags.name, count(hashtag_id) as "hashtag_count" FROM "hashtags" INNER JOIN "tweet_tags" ON "tweet_tags"."hashtag_id" = "hashtags"."id" GROUP BY hashtags.id ORDER BY hashtag_count desc LIMIT 10[0m
+Completed 200 OK in 2.7ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/tweets/recent" for 127.0.0.1 at 2014-11-26 10:48:29 -0800
+Processing by TweetsController#recent as */*
+  [1m[35mTweet Load (0.7ms)[0m  SELECT "tweets".* FROM "tweets" ORDER BY created_at DESC LIMIT 50
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 503[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 502
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 501[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 500
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 499[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 498
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 497[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 496
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 495[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 494
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 493[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 492
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 491[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 490
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 489[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 488
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 487[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 486
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 485[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 484
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 483[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 482
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 481[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 480
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 479[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 478
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 477[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 476
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 475[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 474
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 473[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 472
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 471[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 470
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 469[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 468
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 467[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 466
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 465[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 464
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 463[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 462
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 461[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 460
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 459[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 458
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 457[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 456
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 455[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 454
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "tweets".* FROM "tweets" ORDER BY created_at DESC LIMIT 50[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 503
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 502[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 501
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 500[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 499
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 498[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 497
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 496[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 495
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 494[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 493
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 492[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 491
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 490[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 489
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 488[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 487
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 486[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 485
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 484[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 483
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 482[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 481
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 480[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 479
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 478[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 477
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 476[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 475
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 474[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 473
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 472[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 471
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 470[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 469
+  [1m[36mSQL (1.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 468[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 467
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 466[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 465
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 464[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 463
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 462[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 461
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 460[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 459
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 458[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 457
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 456[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 455
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 454[0m
+Completed 200 OK in 185.9ms (Views: 0.1ms | ActiveRecord: 46.6ms)
+
+
+Started GET "/tweets/search/yolo" for 127.0.0.1 at 2014-11-26 10:48:32 -0800
+Processing by TweetsController#search as */*
+  Parameters: {"keyword"=>"yolo"}
+  [1m[35mHashtag Load (0.3ms)[0m  SELECT "hashtags".* FROM "hashtags" WHERE "hashtags"."name" = 'yolo' LIMIT 1
+  [1m[36mTweet Load (0.6ms)[0m  [1mSELECT "tweets".* FROM "tweets" INNER JOIN "tweet_tags" ON "tweets"."id" = "tweet_tags"."tweet_id" WHERE "tweet_tags"."hashtag_id" = 39 ORDER BY created_at DESC LIMIT 50[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 503
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 502[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 501
+Completed 200 OK in 8.7ms (Views: 0.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/tweets/recent" for 127.0.0.1 at 2014-11-26 10:48:33 -0800
+Processing by TweetsController#recent as */*
+  [1m[36mTweet Load (0.7ms)[0m  [1mSELECT "tweets".* FROM "tweets" ORDER BY created_at DESC LIMIT 50[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 503
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 502[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 501
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 500[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 499
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 498[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 497
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 496[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 495
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 494[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 493
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 492[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 491
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 490[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 489
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 488[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 487
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 486[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 485
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 484[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 483
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 482[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 481
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 480[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 479
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 478[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 477
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 476[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 475
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 474[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 473
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 472[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 471
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 470[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 469
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 468[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 467
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 466[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 465
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 464[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 463
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 462[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 461
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 460[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 459
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 458[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 457
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 456[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 455
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 454[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "tweets".* FROM "tweets" ORDER BY created_at DESC LIMIT 50
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 503[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 502
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 501[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 500
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 499[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 498
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 497[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 496
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 495[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 494
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 493[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 492
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 491[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 490
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 489[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 488
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 487[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 486
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 485[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 484
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 483[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 482
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 481[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 480
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 479[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 478
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 477[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 476
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 475[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 474
+  [1m[36mSQL (0.9ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 473[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 472
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 471[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 470
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 469[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 468
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 467[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 466
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 465[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 464
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 463[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 462
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 461[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 460
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 459[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 458
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 457[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 456
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 455[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "hashtags"."name" FROM "hashtags" INNER JOIN "tweet_tags" ON "hashtags"."id" = "tweet_tags"."hashtag_id" WHERE "tweet_tags"."tweet_id" = 454
+Completed 200 OK in 237.1ms (Views: 0.1ms | ActiveRecord: 48.4ms)

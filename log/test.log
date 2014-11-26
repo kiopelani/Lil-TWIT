@@ -1,0 +1,57 @@
+Connecting to database specified by database.yml
+Started GET "/specs?console=true&spec" for 127.0.0.1 at 2014-11-26 10:41:13 -0800
+Processing by JasmineRails::SpecRunnerController#index as HTML
+  Parameters: {"console"=>"true", "spec"=>nil}
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/jasmine-rails-0.6.0/app/views/jasmine_rails/spec_runner/index.html.erb within layouts/jasmine_rails/spec_runner (1.2ms)
+Compiled jasmine.css  (0ms)  (pid 49288)
+Compiling jasmine.css to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine.css
+Compiling jasmine.css to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine.css
+Compiled jasmine.js  (1ms)  (pid 49288)
+Compiling jasmine.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine.js
+Compiling jasmine.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine.js
+Compiled jasmine-html.js  (0ms)  (pid 49288)
+Compiling jasmine-html.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine-html.js
+Compiling jasmine-html.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine-html.js
+Compiled json2.js  (1ms)  (pid 49288)
+Compiling json2.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/json2.js
+Compiling json2.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/json2.js
+Compiled boot.js  (0ms)  (pid 49288)
+Compiling boot.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/boot.js
+Compiling boot.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/boot.js
+Compiled jasmine-console-shims.js  (0ms)  (pid 49288)
+Compiling jasmine-console-shims.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine-console-shims.js
+Compiling jasmine-console-shims.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine-console-shims.js
+Compiled jasmine-console-reporter.js  (0ms)  (pid 49288)
+Compiling jasmine-console-reporter.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine-console-reporter.js
+Compiling jasmine-console-reporter.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine-console-reporter.js
+Compiled jquery.js  (3ms)  (pid 49288)
+Compiled jquery_ujs.js  (0ms)  (pid 49288)
+Compiled test.js  (0ms)  (pid 49288)
+Compiled application.js  (51ms)  (pid 49288)
+Compiled example_spec.js  (0ms)  (pid 49288)
+Compiled jasmine-specs.js  (64ms)  (pid 49288)
+Compiling jasmine-specs.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine-specs.js
+Compiling jasmine-specs.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine-specs.js
+Completed 200 OK in 174.4ms (Views: 174.0ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Started GET "/specs?console=true&spec" for 127.0.0.1 at 2014-11-26 10:41:36 -0800
+Processing by JasmineRails::SpecRunnerController#index as HTML
+  Parameters: {"console"=>"true", "spec"=>nil}
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/jasmine-rails-0.6.0/app/views/jasmine_rails/spec_runner/index.html.erb within layouts/jasmine_rails/spec_runner (0.9ms)
+Compiling jasmine.css to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine.css
+Compiling jasmine.css to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine.css
+Compiling jasmine.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine.js
+Compiling jasmine.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine.js
+Compiling jasmine-html.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine-html.js
+Compiling jasmine-html.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine-html.js
+Compiling json2.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/json2.js
+Compiling json2.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/json2.js
+Compiling boot.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/boot.js
+Compiling boot.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/boot.js
+Compiling jasmine-console-shims.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine-console-shims.js
+Compiling jasmine-console-shims.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine-console-shims.js
+Compiling jasmine-console-reporter.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine-console-reporter.js
+Compiling jasmine-console-reporter.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine-console-reporter.js
+Compiling jasmine-specs.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine-specs.js
+Compiling jasmine-specs.js to /Users/apprentice/Desktop/lil-twit/tmp/jasmine/assets/jasmine-specs.js
+Completed 200 OK in 39.0ms (Views: 38.7ms | ActiveRecord: 0.0ms)
