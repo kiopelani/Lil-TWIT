@@ -44,9 +44,16 @@ class TweetsController < ApplicationController
     tweet.avatar_url ||= Faker::Avatar.image(tweet.username)
     tweet.save
 
+    puts "*"*50
+    puts "*"*50
+    p params[:hashtags]
+    puts "*"*50
+    puts "*"*50
+
+
     hashtags_names = params[:hashtags] || []
     hashtags_names.each do |name|
-      tweet.hashtags << Hashtag.first_or_create(name: name)
+      tweet.hashtags << Hashtag.create(name: name)
     end
 
     render json: tweet.to_json(methods: :hashtag_names)

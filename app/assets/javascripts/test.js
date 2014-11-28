@@ -62,14 +62,10 @@ $(document).ready(function() {
       data: data
     })
     .done(function(server_data) {
-      // console.log("got some data back");
       for(var i = 0; i < server_data.hashtag_names.length; i++){
-        // console.log(server_data.hashtag_names);
         server_data.hashtag_names[i] = "#" + server_data.hashtag_names[i];
       }
-      // console.log(server_data.hashtag_names)
       hashtag_names = server_data.hashtag_names.toString()//.replace(/,/g , " ");
-      // console.log(hashtag_names)
       $('#tweets-list').prepend('<li class="tweet" style="display: none"><img class="avatar" src="'+server_data.avatar_url+
         '" alt=""><div class="tweet-content"><p><span class="username">'+server_data.handle+'</span><span class="timestamp">'+server_data.created_at+'</span></p><p>'+
         server_data.content +'</p></div></li>');

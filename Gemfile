@@ -27,7 +27,6 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'faker'
   gem 'jasmine-rails'
-  gem 'debugger'
 end
 
 group :test do
